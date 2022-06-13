@@ -1,4 +1,13 @@
 <script setup lang="ts">
+<<<<<<< HEAD
+import { toggleDark } from '~/composables'
+</script>
+
+<template>
+  <button class="btn" title="Toggle Dark mode" @click="toggleDark()">
+    <div i="carbon-moon dark:carbon-sun" />
+  </button>
+=======
 const { t, availableLocales, locale } = useI18n()
 
 const toggleLocales = () => {
@@ -30,4 +39,5 @@ const toggleLocales = () => {
       <div i-carbon-logo-github />
     </a>
   </nav>
+>>>>>>> 7d84b7f9b00624bc4b18f47a9853591984e8084f
 </template>

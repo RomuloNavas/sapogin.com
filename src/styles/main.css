@@ -7,17 +7,27 @@ body,
   margin: 0;
   padding: 0;
 }
-
+html {
+  /* overflow-y: hidden !important;  */
+}
 html.dark {
   background: #121212;
 }
-
+::-webkit-scrollbar {
+  width:  1rem; 
+}
+::-webkit-scrollbar-thumb {
+  background: #BFDBFE;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 #nprogress {
   pointer-events: none;
 }
 
 #nprogress .bar {
-  background: rgb(13,148,136);
+  background: #195bff;
   opacity: 0.75;
   position: fixed;
   z-index: 1031;
@@ -25,4 +35,11 @@ html.dark {
   left: 0;
   width: 100%;
   height: 2px;
+}
+button:disabled {
+  cursor: not-allowed;
+  background: #cad3db;
+}
+button:disabled:hover {
+  background: #cad3db;
 }
